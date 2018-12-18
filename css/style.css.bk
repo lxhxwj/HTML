@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,
+body{
+  height: 100%;
+}
+body{
+  /*background: #2eff4d;*/
+  color: black;
+}
+.wrap{
+  height: 100%;
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.header{
+  display: table-row;
+  height: 80px;
+  line-height: 80px;
+  background: #0aa1ff;
+}
+.main{
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+.center{
+   height: 200px;
+   line-height: 200px;
+}
+.box{
+  display: table-cell;
+}
+.sidebar{
+  width: 100px;
+  height: 200px;
+  line-height: 200px;
+  background: #ff70cd;
+}
+.footer{
+  display: table-row;
+  height: 80px;
+  line-height: 80px;
+  background: #0aa1ff;
+}

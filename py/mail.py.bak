@@ -1,0 +1,50 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+#_DEBUG=True
+import smtplib
+from email.mime.text import MIMEText
+from email.utils import formataddr
+from sys import argv
+
+
+def mail(fr,to,t,sub):
+    #if _DEBUG == True:
+        #import pdb
+        #pdb.set_trace()
+
+
+
+    #my_sender = 'test1@dlp.cn'
+    my_sender = fr + '@dlp.cn'
+    my_pass = 'Aa123456'
+    #my_user = 'test2@dlp.cn'
+    my_user = to + '@dlp.cn'
+
+
+#    print my_sender
+#    print my_user
+
+
+    ret=True
+    try:
+        msg=MIMEText(t,'plain','utf-8')
+        msg['From']=formataddr([fr,my_sender])
+        msg['To']=formataddr([to,my_user])
+        msg['Subject']=sub
+        server=smtplib.SMTP("10.95.41.18",25)
+        server.login(my_sender,my_pass)
+        server.sendmail(my_sender,[my_user,],msg.as_string())
+        server.quit()
+    except Exception:
+        ret=False
+    return ret
+
+if __name__ == '__main__':
+
+    script,fr,to,t,sub = argv
+    ret=mail(fr,to,t,sub)
+
+    if ret:
+        print("邮件发送成功")
+    else:
+        print("邮件发送失败")

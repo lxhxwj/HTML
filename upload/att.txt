@@ -1,0 +1,32 @@
+
+       1      if minor problems (e.g., cannot access subdirectory),
+
+       2      if serious trouble (e.g., cannot access command-line  argument).
+
+AAUUTTHHOORR
+       Written by Richard M. Stallman and David MacKenzie.
+
+RREEPPOORRTTIINNGG BBUUGGSS
+       Report ls bugs to bug-coreutils@gnu.org
+       GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+       General help using GNU software: <http://www.gnu.org/gethelp/>
+       Report ls translation bugs to <http://translationproject.org/team/>
+
+CCOOPPYYRRIIGGHHTT
+       Copyright  ©  2010  Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free  to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+SSEEEE AALLSSOO
+       The  full  documentation  for llss is maintained as a Texinfo manual.  If
+       the iinnffoo and llss programs are properly installed at your site, the  com-
+       mand
+
+              iinnffoo ccoorreeuuttiillss ''llss iinnvvooccaattiioonn''
+
+       should give you access to the complete manual.
+
+
+
+

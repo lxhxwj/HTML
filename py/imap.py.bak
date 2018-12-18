@@ -1,0 +1,47 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+#_DEBUG=True
+#import getpass, email, sys
+#from imapclient import IMAPClient
+
+import imaplib
+import email
+import string
+
+
+conn = imaplib.IMAP4(port= '143',host = 'imap.126.com')
+print('已连接服务器')
+conn.login('datasec360@126.com','Aa123456')
+print('已登陆')
+result, message = conn.select("Inbox")
+type, data = conn.search(None)
+#print msg
+'''
+for num in string.split(data[0]):
+        try:
+            #typ, data = conn.fetch(num, '(RFC822)')
+            msg = email.message_from_string(data[0][1])
+            print msg["From"]
+            print msg["Subject"]
+            print msg["Date"]
+            print "_______________________________"
+        except Exception,e:
+            print 'got msg error: %s' % e
+conn.logout()
+conn.close() 
+hostname = 'imap.126.com'
+username = 'datasec360@126.com'
+passwd = 'Aa123456'
+c = IMAPClient(hostname, ssl= True)
+try:
+    c.login(username, passwd)
+except c.Error:
+    print('Could not log in')
+    sys.exit(1)
+else:
+    c.select_folder('INBOX', readonly = True)
+    result = c.search('UNSEEN')
+    print result
+    msgdict = c.fetch(result, ['BODY.PEEK[]'] )
+    print msgdict.items()
+'''

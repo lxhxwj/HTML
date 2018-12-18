@@ -1,0 +1,14 @@
+<?php
+//ini_set('display_errors', 'On');
+$param1 = $_POST['fr'];
+$param2 = $_POST['to'];
+$param3 = $_POST['t'];
+$param4 = $_POST['sub'];
+$script = dirname(dirname(__FILE__)) . '/mail.py';
+$output = array();
+exec(sprintf('python "%s" "%s" "%s" "%s" "%s"', $script, $param1, $param2, $param3, $param4 ), $output);
+echo '<pre>';
+var_dump($output);die;
+//exec('python /var/www/html/mail.py',$outPut);
+//print_r($outPut);
+?>

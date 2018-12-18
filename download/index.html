@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<div class="wrap">
+	<head class="header">
+		<title>MAIL</title>
+	
+                <!-- 引用控制层插件样式 -->
+                <link rel="stylesheet" href="control/css/zyUpload.css" type="text/css">
+
+                <script type="text/javascript" src="jquery-1.7.2.js"></script>
+                <!-- 引用核心层插件 -->
+                <script type="text/javascript" src="core/zyFile.js"></script>
+                <!-- 引用控制层插件 -->
+                <script type="text/javascript" src="control/js/zyUpload.js"></script>
+                <!-- 引用初始化JS -->
+                <script type="text/javascript" src="demo.js"></script>
+		<div class="tags">
+                                <font size="6" color="blue">
+                                        自动化测试
+                                </font>
+                </div
+	</head>
+	</br>
+	<body>
+	<div class="main">
+		<div class="box sidebar" style="text-align:center; width:30%;height:100%;margin:0px;">	
+			<table> 
+                        <form action="./php/mail.php" method="post">
+                                <input class="upload_btn3" type="submit" value="发送普通邮件"/>
+                        </form>
+	
+		
+			<form action="./php/mailatt.php" method="post">
+                                <input class="upload_btn3" type="submit" value="发送带附件邮件"/>
+                        </form>
+			</table>
+		
+              	
+		<hr style="border: 1px solid #ff0000"/>
+		
+               
+                        <form action="./php/http_get.php" method="post">
+                                <input class="upload_btn3" type="submit" value="HTTP GET请求"/>
+                        </form>
+			<form action="./php/http_content.php" method="post">
+                                <input class="upload_btn3" type="submit" value="HTTP POST DATA"/>
+                        </form>
+			<form action="./php/http_file.php" method="post">
+                                <input class="upload_btn3" type="submit" value="HTTP上传文件"/>
+                        </form>
+                        <form action="./php/https_content.php" method="post">
+                                <input class="upload_btn3" type="submit" value="HTTPS POST DATA"/>
+                        </form>
+			<form action="./php/https_file.php" method="post">
+                                <input class="upload_btn3" type="submit" value="HTTPS上传文件"/>
+                        </form>
+			<form action="./php/ftp.php" method="post">
+                                <input class="upload_btn3" type="submit" value="FTP"/>
+                        </form>
+			<form action="./php/ftps.php" method="post">
+                                <input class="upload_btn3" type="submit" value="FTPS"/>
+                        </form>
+                        <form action="./php/sftp.php" method="post">
+                                <input class="upload_btn3" type="submit" value="SFTP"/>
+                        </form>
+			<form action="./php/defsocket.php" method="post">
+                                <input class="upload_btn3" type="submit" value="未知协议(socket)"/>
+                        </form>
+                        <form action="./php/deftelnet.php" method="post">
+                                <input class="upload_btn3" type="submit" value="未知协议(telnet)"/>
+                        </form>
+			<form action="./php/defssl.php" method="post">
+                                <input class="upload_btn3" type="submit" value="双向SSL"/>
+                        </form>
+                        <form action="./php/defssh.php" method="post">
+                                <input class="upload_btn3" type="submit" value="SSH通道传输"/>
+                        </form>
+		
+		
+	
+		</div>
+	</div>
+	</body>
+	<!--div class="footer"></div-->
+</div>
+</html>
+
+
+
+
+
+
+
